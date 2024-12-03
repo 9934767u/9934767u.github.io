@@ -1,0 +1,39 @@
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+</head>
+<body style="background-color: #f8bbd0; color: white">
+<span style="font-size: 30">
+<p>Pokazany obok progrogram pomaga z liczby z wybranego systemu liczbowego przejść na liczbę zapisaną w systemie dziesiętnym. </p>
+<p><b><h3>Działanie funkcji krok po kroku:</p></b></h3>
+<ol>
+<li>Parametry funkcji:</li>
+<ul>
+<li>p – podstawa systemu liczbowego (np. 2 dla binarnego, 10 dla dziesiętnego).</li>
+<li>S – ciąg znaków reprezentujący liczbę w systemie liczbowym o podstawie p. Każdy znak w S to cyfra liczby</li>
+</ul>
+<li>Zmienne lokalne:</li>
+<ul>
+<li>cyfra – przechowuje aktualnie analizowaną cyfrę.</li>
+<li>wynik – zmienna do przechowywania obliczanej wartości liczby.</li>
+</ul>
+<li>Zmienna wynikowa:</li>
+<ul>
+<li>wynik jest wartością pierwszej cyfry liczby w S (konwersja znaku na wartość liczbową za pomocą (int)S[0]-48).</li>
+</ul>
+<li>Pętla for:</li>
+<ul>
+<li>przechodzi przez kolejne znaki ciągu S, zaczynając od drugiego znaku (indeks i=1).</li>
+<li>Każdy znak jest konwertowany na wartość liczbową i przypisywany do zmiennej cyfra</li>
+<li>Algorytm Hornera wykorzystuje schemat: wynik=wynik*p+cyfra. Dzięki temu oblicza wartość liczby w systemie o podstawie p w jednym przebiegu pętli.</li>
+</ul>
+<li>Zwracanie wyniku</li>
+<ul>
+<li>Po zakończeniu pętli zmienna wynik zawiera wartość liczby w systemie dziesiętnym i jest zwracana jako wynik funkcji.</li>
+</ul>
+</ol>
+<a href="https://www.edukator.pl/tik_edukator/base-n-converter/index.html">Tutaj jeszcze link do strony gdzie nam też liczy dla różnych systemów<a/>
+<p></p>
+<embed src="film.mp4" width="1400" height="800">
+</body>
+</html>
